@@ -1,6 +1,5 @@
 {
   "env": {
-    "UV_PROJECT_ENVIRONMENT": ".venv",
     "PYTHONUNBUFFERED": "1",
     "PYTHONPYCACHEPREFIX": ".cache/claude/pycache",
     "XDG_CACHE_HOME": ".cache/claude",
@@ -11,12 +10,11 @@
   },
   "permissions": {
     "allow": [
-      "Bash(source .venv/bin/activate)",
       "Bash(.venv/bin/pytest:*)",
-      "Bash(.venv/bin/ruff:*)",
       "Bash(.venv/bin/python:*)",
       "Bash(.venv/bin/python3:*)",
-      "Bash(.venv/bin/pre-commit run:*)",
+      "Bash(.venv/bin/pre-commit:*)",
+      "Bash(.venv/bin/ruff:*)",
       "Bash(pytest:*)",
       "Bash(ruff:*)",
       "Bash(pre-commit run:*)",
@@ -26,16 +24,24 @@
       "Bash(git diff:*)",
       "Bash(git log:*)",
       "Bash(git show:*)",
-      "Bash(git branch:*)",
+      "Bash(git branch)",
+      "Bash(git branch -a)",
+      "Bash(git branch -r)",
+      "Bash(git branch --show-current)",
       "Bash(ls:*)",
       "Bash(cat:*)",
       "Bash(grep:*)",
       "Bash(rg:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(.venv/bin/coverage report *)",
+      "Bash(.venv/bin/coverage debug *)",
+      "Bash(git check-ignore *)",
+      "Bash(git grep *)"
     ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)"
-    ]
+    "deny": ["Read(./.env)", "Read(./.env.*)"]
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": ["Reasoning"]
   }
 }
