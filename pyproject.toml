@@ -46,6 +46,7 @@ dependencies = [
     "mofax",
     "mofapy2",
     "bokeh",
+    "ruff",
 ]
 
 [project.urls]
