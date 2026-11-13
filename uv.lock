@@ -4427,7 +4427,7 @@ wheels = [
 
 [[package]]
 name = "spatialdata-plot"
-version = "0.4.0"
+version = "0.4.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "matplotlib" },
@@ -4436,9 +4436,9 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "spatialdata" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b0/4c/cf5b141a624d09f6dbcae67d4fac611824a8c922834a5afb5d31b236dbdc/spatialdata_plot-0.4.0.tar.gz", hash = "sha256:2f92664fdfe7b6e91d1d1563a5468a78fd980e3369e85ae7dd8bd812ab16e0ed", size = 18971339, upload-time = "2026-05-27T15:19:45.291Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bc/c0/62e5f04d2cd6949ec16d1f9969c4db98230f14b7c0251e2a2829cbbd4492/spatialdata_plot-0.4.3.tar.gz", hash = "sha256:0729763b969b735482d61f44c4b70a3a9ca7fbcfc836e0005f0dea8307358506", size = 19710719, upload-time = "2026-10-09T15:21:02.068Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b7/b8/ab2141c09b5eda2b13c727d8ddaff56f364f41a2127f30260199629c65dc/spatialdata_plot-0.4.0-py3-none-any.whl", hash = "sha256:e64b713e97d05caf84516007002739c38b84bbd59450424f0c2d83593179b1ed", size = 114794, upload-time = "2026-05-27T15:19:43.436Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/a7/99a9a4397111dd497f8cae506c6100c5058f6c1ddc73e18affd9f5ae7f2a/spatialdata_plot-0.4.3-py3-none-any.whl", hash = "sha256:63ccebcbe8e7aeb44fb18875fe467e3ea7142b05d33d68881f54b92c8b088900", size = 154368, upload-time = "2026-10-09T15:20:59.812Z" },
 ]
 
 [[package]]
@@ -4611,6 +4611,7 @@ dependencies = [
     { name = "numba" },
     { name = "numpy" },
     { name = "spatialdata" },
+    { name = "spatialdata-plot" },
     { name = "spatiato" },
     { name = "squidpy" },
     { name = "zarr" },
@@ -4627,6 +4628,7 @@ requires-dist = [
     { name = "numba", specifier = ">=0.64" },
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "spatialdata", specifier = ">=0.8.0" },
+    { name = "spatialdata-plot", specifier = ">=0.4.3" },
     { name = "spatiato", specifier = ">=0.3.1" },
     { name = "squidpy" },
     { name = "zarr", specifier = ">=3.2.1" },

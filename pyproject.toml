@@ -39,6 +39,7 @@ dependencies = [
     "spatiato>=0.3.1",
     "instanseg-torch @ git+https://github.com/instanseg/instanseg.git@main",
     "spatialdata>=0.8.0",
+    "spatialdata-plot>=0.4.3",
     "zarr>=3.2.1",
     "squidpy",
     "jupyter",
